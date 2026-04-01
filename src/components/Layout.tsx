@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Globe, Mail, Linkedin, Twitter, Facebook, Shield } from 'lucide-react';
+import { Globe, Mail, Linkedin, Twitter, Facebook, Shield, Menu, X } from 'lucide-react';
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const location = useLocation();
   const path = location.pathname;
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
     <div className="min-h-screen bg-surface text-on-surface antialiased flex flex-col">
@@ -13,46 +14,109 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <nav className="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto">
           <div className="flex-1">
             <Link to="/" className="inline-block">
-              <img 
-                src="https://lh3.googleusercontent.com/d/1eqklTamB7K-tHoChzisJR6GcFc-B1dOl" 
-                alt="Cleophas & Associates Logo" 
+              <img
+                src="https://lh3.googleusercontent.com/d/1eqklTamB7K-tHoChzisJR6GcFc-B1dOl"
+                alt="Cleophas & Associates Logo"
                 className="h-12 md:h-16 w-auto object-contain"
                 referrerPolicy="no-referrer"
               />
             </Link>
           </div>
           <div className="hidden md:flex items-center justify-center space-x-8 flex-1">
-            <Link 
-              to="/services" 
+            <Link
+              to="/services"
               className={`font-medium transition-colors border-b-2 pb-1 ${path === '/services' ? 'text-[#004524] dark:text-[#AEF2C0] font-bold border-[#C9981A]' : 'text-[#1B1C1C]/70 dark:text-[#FBF9F9]/70 hover:text-[#004524] dark:hover:text-[#FBF9F9] border-transparent'}`}
             >
               Services
             </Link>
-            <Link 
-              to="/insights" 
+            <Link
+              to="/insights"
               className={`font-medium transition-colors border-b-2 pb-1 ${path === '/insights' ? 'text-[#004524] dark:text-[#AEF2C0] font-bold border-[#C9981A]' : 'text-[#1B1C1C]/70 dark:text-[#FBF9F9]/70 hover:text-[#004524] dark:hover:text-[#FBF9F9] border-transparent'}`}
             >
               Our Work
             </Link>
-            <Link 
-              to="/about" 
+            <Link
+              to="/about"
               className={`font-medium transition-colors border-b-2 pb-1 ${path === '/about' ? 'text-[#004524] dark:text-[#AEF2C0] font-bold border-[#C9981A]' : 'text-[#1B1C1C]/70 dark:text-[#FBF9F9]/70 hover:text-[#004524] dark:hover:text-[#FBF9F9] border-transparent'}`}
             >
               About Us
             </Link>
-            <Link 
-              to="/careers" 
+            <Link
+              to="/careers"
               className={`font-medium transition-colors border-b-2 pb-1 ${path === '/careers' ? 'text-[#004524] dark:text-[#AEF2C0] font-bold border-[#C9981A]' : 'text-[#1B1C1C]/70 dark:text-[#FBF9F9]/70 hover:text-[#004524] dark:hover:text-[#FBF9F9] border-transparent'}`}
             >
               Team
             </Link>
           </div>
-          <div className="flex-1 flex justify-end">
+          <div className="hidden md:flex flex-1 justify-end">
             <Link to="/contact" className="bg-[#C9981A] text-[#261A00] px-6 py-2.5 rounded-lg font-bold hover:shadow-lg hover:brightness-110 transition-all duration-300 inline-block text-center">
               Book a Consultation
             </Link>
           </div>
+
+          {/* Mobile Menu Toggle */}
+          <div className="md:hidden flex flex-1 justify-end">
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="text-[#1B1C1C] dark:text-[#FBF9F9] hover:text-[#004524] dark:hover:text-[#AEF2C0] transition-colors p-2 relative z-50"
+              aria-label="Toggle menu"
+            >
+              {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
+            </button>
+          </div>
         </nav>
+
+        {/* Mobile Menu Overlay */}
+        {isMobileMenuOpen && (
+          <div className="fixed inset-0 z-40 bg-[#FBF9F9] dark:bg-[#1B1C1C] pt-28 px-8 pb-8 overflow-y-auto flex flex-col md:hidden transition-all duration-300">
+            <div className="flex flex-col space-y-4 text-center text-lg">
+              <Link
+                to="/"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className={`font-medium transition-colors py-3 border-b border-[#C0C9BF]/20 ${path === '/' ? 'text-[#004524] dark:text-[#AEF2C0] font-bold' : 'text-[#1B1C1C]/80 dark:text-[#FBF9F9]/80 hover:text-[#004524] dark:hover:text-[#FBF9F9]'}`}
+              >
+                Home
+              </Link>
+              <Link
+                to="/services"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className={`font-medium transition-colors py-3 border-b border-[#C0C9BF]/20 ${path === '/services' ? 'text-[#004524] dark:text-[#AEF2C0] font-bold' : 'text-[#1B1C1C]/80 dark:text-[#FBF9F9]/80 hover:text-[#004524] dark:hover:text-[#FBF9F9]'}`}
+              >
+                Services
+              </Link>
+              <Link
+                to="/insights"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className={`font-medium transition-colors py-3 border-b border-[#C0C9BF]/20 ${path === '/insights' ? 'text-[#004524] dark:text-[#AEF2C0] font-bold' : 'text-[#1B1C1C]/80 dark:text-[#FBF9F9]/80 hover:text-[#004524] dark:hover:text-[#FBF9F9]'}`}
+              >
+                Our Work
+              </Link>
+              <Link
+                to="/about"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className={`font-medium transition-colors py-3 border-b border-[#C0C9BF]/20 ${path === '/about' ? 'text-[#004524] dark:text-[#AEF2C0] font-bold' : 'text-[#1B1C1C]/80 dark:text-[#FBF9F9]/80 hover:text-[#004524] dark:hover:text-[#FBF9F9]'}`}
+              >
+                About Us
+              </Link>
+              <Link
+                to="/careers"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className={`font-medium transition-colors py-3 border-b border-[#C0C9BF]/20 ${path === '/careers' ? 'text-[#004524] dark:text-[#AEF2C0] font-bold' : 'text-[#1B1C1C]/80 dark:text-[#FBF9F9]/80 hover:text-[#004524] dark:hover:text-[#FBF9F9]'}`}
+              >
+                Team
+              </Link>
+              <div className="pt-6 mt-2">
+                <Link
+                  to="/contact"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="bg-[#C9981A] text-[#261A00] px-6 py-3.5 rounded-lg font-bold hover:shadow-lg hover:brightness-110 transition-all duration-300 block text-center w-full"
+                >
+                  Book a Consultation
+                </Link>
+              </div>
+            </div>
+          </div>
+        )}
       </header>
 
       <main className="flex-grow pt-16">
@@ -65,22 +129,22 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <Shield className="w-[60rem] h-[60rem] text-[#004524] dark:text-[#AEF2C0]" />
         </div>
         <div className="max-w-screen-2xl mx-auto relative z-10">
-          
+
           {/* Newsletter Card */}
           <div className="bg-[#004524] rounded-[2rem] overflow-hidden shadow-2xl mb-24 flex flex-col md:flex-row">
             <div className="p-10 md:p-16 flex-1 flex flex-col justify-center">
               <div className="w-12 h-1 bg-[#C9981A] mb-8"></div>
               <h3 className="font-serif text-4xl md:text-5xl font-bold text-[#FBF9F9] mb-4">
-                Subscribe To Our <br/>
+                Subscribe To Our <br />
                 <span className="italic font-light text-[#C9981A]">Newsletters.</span>
               </h3>
               <p className="font-sans text-[#FBF9F9]/80 text-lg mb-8 max-w-md leading-relaxed">
                 Receive tax, audit, and industry-specific news right to your inbox. Tailored insights for your business growth.
               </p>
               <form className="flex flex-col sm:flex-row gap-4 max-w-md" onSubmit={(e) => e.preventDefault()}>
-                <input 
-                  type="email" 
-                  placeholder="Email Address" 
+                <input
+                  type="email"
+                  placeholder="Email Address"
                   className="flex-1 bg-[#FBF9F9]/10 border-b-2 border-[#C9981A]/50 focus:border-[#C9981A] text-white placeholder:text-white/50 px-4 py-3 outline-none font-sans transition-colors"
                 />
                 <button className="bg-[#C9981A] text-[#261A00] px-8 py-3 rounded-lg font-bold hover:shadow-lg hover:brightness-110 transition-all whitespace-nowrap">
@@ -89,9 +153,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               </form>
             </div>
             <div className="md:w-2/5 lg:w-1/2 relative min-h-[300px]">
-              <img 
-                src="https://images.pexels.com/photos/3760069/pexels-photo-3760069.jpeg?auto=compress&cs=tinysrgb&w=800&q=80" 
-                alt="Newsletter Subscription" 
+              <img
+                src="https://images.pexels.com/photos/3760069/pexels-photo-3760069.jpeg?auto=compress&cs=tinysrgb&w=800&q=80"
+                alt="Newsletter Subscription"
                 className="absolute inset-0 w-full h-full object-cover"
                 referrerPolicy="no-referrer"
               />
@@ -103,9 +167,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             {/* Col 1: Brand & Contact */}
             <div className="space-y-6">
               <div className="inline-block mb-4">
-                <img 
-                  src="https://lh3.googleusercontent.com/d/1eqklTamB7K-tHoChzisJR6GcFc-B1dOl" 
-                  alt="Cleophas & Associates Logo" 
+                <img
+                  src="https://lh3.googleusercontent.com/d/1eqklTamB7K-tHoChzisJR6GcFc-B1dOl"
+                  alt="Cleophas & Associates Logo"
                   className="h-16 md:h-20 w-auto object-contain"
                   referrerPolicy="no-referrer"
                 />
@@ -172,7 +236,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <a href="#" className="hover:text-[#004524] dark:hover:text-[#AEF2C0] transition-colors">Terms of Service</a>
             </div>
           </div>
-          
+
           {/* Disclaimer */}
           <div className="mt-8 text-center max-w-4xl mx-auto">
             <p className="font-sans text-xs text-[#1B1C1C]/40 dark:text-[#FBF9F9]/40 italic">
