@@ -12,11 +12,13 @@ import Insights from './pages/Insights';
 import Careers from './pages/Careers';
 import Contact from './pages/Contact';
 import ServiceBookkeeping from './pages/ServiceBookkeeping';
+import ScrollToTop from './components/ScrollToTop';
 import Team from './pages/Team';
 
 export default function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
