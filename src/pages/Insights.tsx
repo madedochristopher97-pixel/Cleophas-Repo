@@ -108,7 +108,7 @@ export default function Insights() {
             {/* Card 1 */}
             <div className="bg-[#ffffff] rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col overflow-hidden">
               <div className="h-48 overflow-hidden relative">
-                <img alt="Retail audit" className="w-full h-full object-cover transition-transform duration-700 hover:scale-110" src="https://images.pexels.com/photos/5816297/pexels-photo-5816297.jpeg?auto=compress&cs=tinysrgb&w=800" referrerPolicy="no-referrer" />
+                <img alt="Retail audit" className="w-full h-full object-cover transition-transform duration-700 hover:scale-110" src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=800" referrerPolicy="no-referrer" />
                 <div className="absolute top-4 left-4 bg-[#004524] text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full">
                   Audit & Assurance
                 </div>
@@ -127,7 +127,7 @@ export default function Insights() {
             {/* Card 2 */}
             <div className="bg-[#ffffff] rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col overflow-hidden">
               <div className="h-48 overflow-hidden relative">
-                <img alt="Hospitality compliance" className="w-full h-full object-cover transition-transform duration-700 hover:scale-110" src="https://images.pexels.com/photos/443383/pexels-photo-443383.jpeg?auto=compress&cs=tinysrgb&w=800" referrerPolicy="no-referrer" />
+                <img alt="Hospitality compliance" className="w-full h-full object-cover transition-transform duration-700 hover:scale-110" src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&w=800" referrerPolicy="no-referrer" />
                 <div className="absolute top-4 left-4 bg-[#004524] text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full">
                   Tax Advisory
                 </div>
@@ -146,7 +146,7 @@ export default function Insights() {
             {/* Card 3 */}
             <div className="bg-[#ffffff] rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col overflow-hidden">
               <div className="h-48 overflow-hidden relative">
-                <img alt="NGO financial advisory" className="w-full h-full object-cover transition-transform duration-700 hover:scale-110" src="https://images.pexels.com/photos/6646917/pexels-photo-6646917.jpeg?auto=compress&cs=tinysrgb&w=800" referrerPolicy="no-referrer" />
+                <img alt="NGO financial advisory" className="w-full h-full object-cover transition-transform duration-700 hover:scale-110" src="https://images.pexels.com/photos/3184325/pexels-photo-3184325.jpeg?auto=compress&cs=tinysrgb&w=800" referrerPolicy="no-referrer" />
                 <div className="absolute top-4 left-4 bg-[#004524] text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full">
                   Financial Consulting
                 </div>

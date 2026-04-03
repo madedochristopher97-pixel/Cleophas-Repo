@@ -178,7 +178,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <p>SDA Building, 2nd flr</p>
                 <p>Riverside Drive</p>
                 <p>Nairobi, Kenya</p>
-                <p className="pt-4">0714023691</p>
+                <p className="pt-4">+254 714 023 691</p>
                 <p>info@cleophasandassociates.com</p>
               </div>
               <div className="flex space-x-4 pt-2">
