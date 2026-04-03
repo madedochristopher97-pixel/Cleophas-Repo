@@ -13,20 +13,20 @@ const teamMembers = [
   {
     name: "Sarah Nakato",
     role: "Head of Tax Advisory",
-    image: "/Head of Advisory.jpg",
+    image: "/Head of Advisory (2).jpg",
     bio: "Sarah brings extensive corporate and international tax expertise to guide our clients through complex landscapes.",
-  },
-  {
-    name: "David Ochieng",
-    role: "Director of Audit & Assurance",
-    image: "/Audit and Assurance Image.jpg",
-    bio: "Specializing in compliance and robust financial reporting across diverse institutional sectors.",
   },
   {
     name: "Rachel Mutemi",
     role: "Lead Corporate Finance",
     image: "/Corporate Finance Image.jpg",
     bio: "An expert in M&A, valuations, and strategic capital restructuring for rapidly growing enterprises.",
+  },
+  {
+    name: "David Ochieng",
+    role: "Director of Audit & Assurance",
+    image: "/Audit and Assurance Image.jpg",
+    bio: "Specializing in compliance and robust financial reporting across diverse institutional sectors.",
   }
 ];
 

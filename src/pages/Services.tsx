@@ -10,7 +10,7 @@ export default function Services() {
       title: 'Audit & Assurance',
       description: 'Beyond compliance, we provide deep insights into your financial health, ensuring transparency and building trust with your stakeholders.',
       icon: <ShieldCheck className="w-8 h-8 text-[#C9981A]" />,
-      image: 'https://images.pexels.com/photos/5668858/pexels-photo-5668858.jpeg?auto=compress&cs=tinysrgb&w=1000&q=80',
+      image: '/Audit & Assurance.jpg',
       link: '/services/audit'
     },
     {
@@ -26,7 +26,7 @@ export default function Services() {
       title: 'Corporate Finance',
       description: 'From mergers and acquisitions to capital restructuring, our experts guide you through pivotal transactions to maximize shareholder value.',
       icon: <TrendingUp className="w-8 h-8 text-[#C9981A]" />,
-      image: 'https://images.pexels.com/photos/5716001/pexels-photo-5716001.jpeg?auto=compress&cs=tinysrgb&w=1000&q=80',
+      image: '/Corporate Finance In Our Work.jpg',
       link: '/services/corporate-finance'
     },
     {
