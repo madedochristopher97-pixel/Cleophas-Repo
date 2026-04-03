@@ -10,7 +10,7 @@ export default function Services() {
       title: 'Audit & Assurance',
       description: 'Beyond compliance, we provide deep insights into your financial health, ensuring transparency and building trust with your stakeholders.',
       icon: <ShieldCheck className="w-8 h-8 text-[#C9981A]" />,
-      image: '/Audit-Assurance.jpg',
+      image: '/Audit-Assurance.webp',
       link: '/services/audit'
     },
     {
@@ -18,7 +18,7 @@ export default function Services() {
       title: 'Tax Advisory',
       description: 'Strategic tax planning tailored to your unique footprint. We navigate complex regulatory landscapes to optimize your tax position and mitigate risk.',
       icon: <Calculator className="w-8 h-8 text-[#C9981A]" />,
-      image: '/Tax Advisory.jpg',
+      image: '/Tax Advisory.webp',
       link: '/services/tax'
     },
     {
@@ -26,7 +26,7 @@ export default function Services() {
       title: 'Corporate Finance',
       description: 'From mergers and acquisitions to capital restructuring, our experts guide you through pivotal transactions to maximize shareholder value.',
       icon: <TrendingUp className="w-8 h-8 text-[#C9981A]" />,
-      image: '/Corporate Finance In Our Work.jpg',
+      image: '/Corporate Finance In Our Work.webp',
       link: '/services/corporate-finance'
     },
     {
@@ -34,7 +34,7 @@ export default function Services() {
       title: 'Wealth Management',
       description: 'Preserving and growing your legacy across generations. We offer bespoke wealth strategies for high-net-worth individuals and families.',
       icon: <Landmark className="w-8 h-8 text-[#C9981A]" />,
-      image: '/Wealth Management.jpg',
+      image: '/Wealth Management.webp',
       link: '/services/wealth-management'
     },
     {

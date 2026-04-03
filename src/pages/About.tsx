@@ -48,7 +48,7 @@ export default function About() {
                 <img 
                   alt="Founder Portrait" 
                   className="w-full h-full object-cover grayscale-[0.2] hover:grayscale-0 transition-all duration-700" 
-                  src="/About Us Image.png"
+                  src="/About Us Image.webp"
                 />
               </div>
               <div className="absolute -bottom-8 -right-8 w-48 h-48 bg-secondary-fixed rounded-xl -z-10 hidden md:block"></div>

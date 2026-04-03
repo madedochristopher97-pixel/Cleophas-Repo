@@ -7,25 +7,25 @@ const teamMembers = [
   {
     name: "Cleophas Kisambu",
     role: "Founder",
-    image: "/About Us Image.png",
+    image: "/About Us Image.webp",
     bio: "With over 20 years of experience in audit and corporate finance, Cleophas leads the firm's strategic direction.",
   },
   {
     name: "Sarah Nakato",
     role: "Head of Tax Advisory",
-    image: "/Head of Advisory In Teams.jpg",
+    image: "/Head of Advisory In Teams.webp",
     bio: "Sarah brings extensive corporate and international tax expertise to guide our clients through complex landscapes.",
   },
   {
     name: "Rachel Mutemi",
     role: "Lead Corporate Finance",
-    image: "/Corporate Finance Role In Teams.jpg",
+    image: "/Corporate Finance Role In Teams.webp",
     bio: "An expert in M&A, valuations, and strategic capital restructuring for rapidly growing enterprises.",
   },
   {
     name: "David Ochieng",
     role: "Director of Audit & Assurance",
-    image: "/Audit and Assurance Role In Teams.jpg",
+    image: "/Audit and Assurance Role In Teams.webp",
     bio: "Specializing in compliance and robust financial reporting across diverse institutional sectors.",
   }
 ];
