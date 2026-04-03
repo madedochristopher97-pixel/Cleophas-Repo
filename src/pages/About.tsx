@@ -48,7 +48,7 @@ export default function About() {
                 <img 
                   alt="Founder Portrait" 
                   className="w-full h-full object-cover grayscale-[0.2] hover:grayscale-0 transition-all duration-700" 
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCj_rMwtGNv72HmHmk9NIIBch8Z0CHJwEhvvpMpecIhq-GLp5GuH54PWXPO6IiXlxaUNrrVniRo4Hkvj-D9NtC-vGBJg_z9xFh9IrxyiMfQDxmE9CiAsMAnn-s82X-lBZ3tTWUwD1jNoLHpz26r-doTh7ndMMGoUMUyYMTv9jBzyqdK2Epsq9V8PQCSlTSNCDZXTS-m7FK8VqgCIq2il675eSP37pIwekzkH0ouhxbNcXthhGJYBSVWOaG6WKU2x6vAL5i-SOHKYkhj"
+                  src="/About Us Image.png"
                 />
               </div>
               <div className="absolute -bottom-8 -right-8 w-48 h-48 bg-secondary-fixed rounded-xl -z-10 hidden md:block"></div>

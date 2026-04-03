@@ -175,10 +175,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 />
               </div>
               <div className="font-sans text-[#1B1C1C]/80 dark:text-[#FBF9F9]/80 space-y-2 text-sm font-medium">
-                <p>123 Financial District</p>
-                <p>Suite 400</p>
-                <p>Nairobi, Kenya 00100</p>
-                <p className="pt-4">+254 (0) 700 000 000</p>
+                <p>SDA Building, 2nd flr</p>
+                <p>Riverside Drive</p>
+                <p>Nairobi, Kenya</p>
+                <p className="pt-4">0714023691</p>
                 <p>info@cleophas.com</p>
               </div>
               <div className="flex space-x-4 pt-2">

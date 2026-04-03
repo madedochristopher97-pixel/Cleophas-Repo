@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, ShieldCheck, TrendingUp, Landmark, Calculator, Shield, BarChart3 } from 'lucide-react';
+import { ArrowRight, ShieldCheck, TrendingUp, Landmark, Calculator, Shield, BarChart3, BookOpen } from 'lucide-react';
 
 export default function Services() {
   const services = [
@@ -36,6 +36,14 @@ export default function Services() {
       icon: <Landmark className="w-8 h-8 text-[#C9981A]" />,
       image: 'https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=1000&q=80',
       link: '/services/wealth-management'
+    },
+    {
+      id: 'bookkeeping',
+      title: 'Bookkeeping',
+      description: 'Meticulous record-keeping and financial reporting to ensure accuracy and compliance in your day-to-day operations.',
+      icon: <BookOpen className="w-8 h-8 text-[#C9981A]" />,
+      image: 'https://images.pexels.com/photos/6693655/pexels-photo-6693655.jpeg?auto=compress&cs=tinysrgb&w=1000&q=80',
+      link: '/services'
     }
   ];
 
