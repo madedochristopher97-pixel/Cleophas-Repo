@@ -10,7 +10,7 @@ export default function Services() {
       title: 'Audit & Assurance',
       description: 'Beyond compliance, we provide deep insights into your financial health, ensuring transparency and building trust with your stakeholders.',
       icon: <ShieldCheck className="w-8 h-8 text-[#C9981A]" />,
-      image: '/Audit & Assurance.jpg',
+      image: '/Audit-Assurance.jpg',
       link: '/services/audit'
     },
     {
