@@ -37,7 +37,7 @@ export default function Careers() {
       <section className="relative bg-primary text-on-primary py-24 md:py-32 px-8 overflow-hidden">
         <div className="absolute inset-0 opacity-20 mix-blend-overlay">
           <img 
-            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=2000" 
+            src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=2000&q=80" 
             alt="Team working" 
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"

@@ -10,7 +10,7 @@ export default function ServiceAudit() {
       <section className="bg-[#004524] text-white py-24 md:py-32 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 mix-blend-overlay">
           <img 
-            src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=2000" 
+            src="https://images.pexels.com/photos/5668858/pexels-photo-5668858.jpeg?auto=compress&cs=tinysrgb&w=2000&q=80" 
             alt="Audit and Assurance" 
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"

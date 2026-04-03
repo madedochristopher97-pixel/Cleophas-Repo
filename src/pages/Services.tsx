@@ -10,7 +10,7 @@ export default function Services() {
       title: 'Audit & Assurance',
       description: 'Beyond compliance, we provide deep insights into your financial health, ensuring transparency and building trust with your stakeholders.',
       icon: <ShieldCheck className="w-8 h-8 text-[#C9981A]" />,
-      image: 'https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=1000',
+      image: 'https://images.pexels.com/photos/5668858/pexels-photo-5668858.jpeg?auto=compress&cs=tinysrgb&w=1000&q=80',
       link: '/services/audit'
     },
     {
@@ -18,7 +18,7 @@ export default function Services() {
       title: 'Tax Advisory',
       description: 'Strategic tax planning tailored to your unique footprint. We navigate complex regulatory landscapes to optimize your tax position and mitigate risk.',
       icon: <Calculator className="w-8 h-8 text-[#C9981A]" />,
-      image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=1000',
+      image: 'https://images.pexels.com/photos/7652017/pexels-photo-7652017.jpeg?auto=compress&cs=tinysrgb&w=1000&q=80',
       link: '/services/tax'
     },
     {
@@ -26,7 +26,7 @@ export default function Services() {
       title: 'Corporate Finance',
       description: 'From mergers and acquisitions to capital restructuring, our experts guide you through pivotal transactions to maximize shareholder value.',
       icon: <TrendingUp className="w-8 h-8 text-[#C9981A]" />,
-      image: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=1000',
+      image: 'https://images.pexels.com/photos/5716001/pexels-photo-5716001.jpeg?auto=compress&cs=tinysrgb&w=1000&q=80',
       link: '/services/corporate-finance'
     },
     {
@@ -53,7 +53,7 @@ export default function Services() {
       <section className="relative bg-[#004524] text-[#FBF9F9] py-24 md:py-32 px-8 overflow-hidden">
         <div className="absolute inset-0 opacity-10 mix-blend-overlay">
           <img 
-            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=2000" 
+            src="https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg?auto=compress&cs=tinysrgb&w=2000&q=80" 
             alt="Architecture" 
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"

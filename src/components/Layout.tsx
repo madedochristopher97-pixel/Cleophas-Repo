@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Globe, Mail, Linkedin, Twitter, Facebook, Shield, Menu, X } from 'lucide-react';
+import { Globe, Mail, Linkedin, Twitter, Facebook, Shield, Menu, X, MessageCircle } from 'lucide-react';
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const location = useLocation();
@@ -68,7 +68,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
         {/* Mobile Menu Overlay */}
         {isMobileMenuOpen && (
-          <div className="fixed inset-0 z-40 bg-[#FBF9F9] dark:bg-[#1B1C1C] pt-28 px-8 pb-8 overflow-y-auto flex flex-col md:hidden transition-all duration-300">
+          <div className="fixed inset-0 h-[100dvh] z-40 bg-[#FBF9F9] dark:bg-[#1B1C1C] pt-28 px-8 pb-8 overflow-y-auto flex flex-col md:hidden transition-all duration-300">
             <div className="flex flex-col space-y-4 text-center text-lg">
               <Link
                 to="/"
@@ -179,7 +179,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <p>Riverside Drive</p>
                 <p>Nairobi, Kenya</p>
                 <p className="pt-4">0714023691</p>
-                <p>info@cleophas.com</p>
+                <p>info@cleophasandassociates.com</p>
               </div>
               <div className="flex space-x-4 pt-2">
                 <a href="#" className="text-[#004524] dark:text-[#AEF2C0] hover:text-[#C9981A] transition-colors"><Linkedin size={20} /></a>
@@ -248,6 +248,17 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
         </div>
       </footer>
+
+      {/* WhatsApp Floating Button */}
+      <a 
+        href="https://wa.me/254714023691" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 bg-[#25D366] text-white rounded-full shadow-lg hover:scale-110 transition-transform hover:shadow-2xl"
+        aria-label="Chat on WhatsApp"
+      >
+        <MessageCircle size={32} />
+      </a>
     </div>
   );
 }

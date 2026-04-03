@@ -9,7 +9,7 @@ export default function About() {
       <section className="relative bg-[#004524] text-[#FBF9F9] py-24 md:py-32 px-8 overflow-hidden">
         <div className="absolute inset-0 opacity-10 mix-blend-overlay">
           <img 
-            src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=2000" 
+            src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=2000&q=80" 
             alt="Office building" 
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"

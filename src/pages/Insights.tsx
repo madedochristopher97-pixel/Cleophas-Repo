@@ -27,7 +27,7 @@ export default function Insights() {
       <section className="relative bg-[#004524] text-[#FBF9F9] py-24 md:py-32 px-8 overflow-hidden">
         <div className="absolute inset-0 opacity-10 mix-blend-overlay">
           <img 
-            src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=2000" 
+            src="https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg?auto=compress&cs=tinysrgb&w=2000&q=80" 
             alt="Data and charts" 
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
@@ -127,7 +127,7 @@ export default function Insights() {
             {/* Card 2 */}
             <div className="bg-[#ffffff] rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col overflow-hidden">
               <div className="h-48 overflow-hidden relative">
-                <img alt="Hospitality compliance" className="w-full h-full object-cover transition-transform duration-700 hover:scale-110" src="https://images.pexels.com/photos/205961/pexels-photo-205961.jpeg?auto=compress&cs=tinysrgb&w=800" referrerPolicy="no-referrer" />
+                <img alt="Hospitality compliance" className="w-full h-full object-cover transition-transform duration-700 hover:scale-110" src="https://images.pexels.com/photos/443383/pexels-photo-443383.jpeg?auto=compress&cs=tinysrgb&w=800" referrerPolicy="no-referrer" />
                 <div className="absolute top-4 left-4 bg-[#004524] text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full">
                   Tax Advisory
                 </div>

@@ -10,7 +10,7 @@ export default function ServiceTax() {
       <section className="bg-[#004524] text-white py-24 md:py-32 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 mix-blend-overlay">
           <img 
-            src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=2000" 
+            src="https://images.pexels.com/photos/7652017/pexels-photo-7652017.jpeg?auto=compress&cs=tinysrgb&w=2000&q=80" 
             alt="Tax Advisory" 
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"

@@ -5,27 +5,27 @@ import { Link } from 'react-router-dom';
 
 const teamMembers = [
   {
-    name: "John Cleophas",
-    role: "Managing Partner & Founder",
+    name: "Cleophas Kisambu",
+    role: "Founder",
     image: "/About Us Image.png",
-    bio: "With over 20 years of experience in audit and corporate finance, John leads the firm's strategic direction.",
+    bio: "With over 20 years of experience in audit and corporate finance, Cleophas leads the firm's strategic direction.",
   },
   {
     name: "Sarah Nakato",
     role: "Head of Tax Advisory",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=800",
     bio: "Sarah brings extensive corporate and international tax expertise to guide our clients through complex landscapes.",
   },
   {
     name: "David Ochieng",
     role: "Director of Audit & Assurance",
-    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.pexels.com/photos/3785104/pexels-photo-3785104.jpeg?auto=compress&cs=tinysrgb&w=800",
     bio: "Specializing in compliance and robust financial reporting across diverse institutional sectors.",
   },
   {
     name: "Rachel Mutemi",
     role: "Lead Corporate Finance",
-    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=800",
+    image: "https://images.pexels.com/photos/3756678/pexels-photo-3756678.jpeg?auto=compress&cs=tinysrgb&w=800",
     bio: "An expert in M&A, valuations, and strategic capital restructuring for rapidly growing enterprises.",
   }
 ];
@@ -37,7 +37,7 @@ export default function Team() {
       <section className="relative bg-[#004524] text-white py-24 md:py-32 px-8 overflow-hidden">
         <div className="absolute inset-0 opacity-10 mix-blend-overlay">
           <img 
-            src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=2000" 
+            src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&w=2000" 
             alt="Our Team" 
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"

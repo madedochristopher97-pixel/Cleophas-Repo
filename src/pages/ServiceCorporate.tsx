@@ -10,7 +10,7 @@ export default function ServiceCorporate() {
       <section className="bg-[#004524] text-white py-24 md:py-32 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 mix-blend-overlay">
           <img 
-            src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=2000" 
+            src="https://images.pexels.com/photos/5716001/pexels-photo-5716001.jpeg?auto=compress&cs=tinysrgb&w=2000&q=80" 
             alt="Corporate Finance" 
             className="w-full h-full object-cover"
             referrerPolicy="no-referrer"
