@@ -61,59 +61,121 @@ export default function Contact() {
       </section>
 
       {/* 2. CONTACT SPLIT */}
-      <section className="bg-[#ffffff] py-24">
+      <section className="bg-[#ffffff] py-24 overflow-hidden">
         <div className="max-w-screen-2xl mx-auto px-8">
-          <div className="grid lg:grid-cols-2 gap-20">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
             {/* Left: Inquiry Form */}
             <motion.div 
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="space-y-12"
+              className="space-y-8 bg-white p-6 md:p-10 rounded-2xl shadow-xl border border-gray-100"
             >
-              <header>
-                <h2 className="font-serif text-4xl text-[#004524] mb-4 font-bold">Send Us a Message</h2>
-                <p className="text-[#404941] font-medium font-sans text-lg">Please fill out the form below and our specialized team will get back to you.</p>
+              <header className="mb-6">
+                <h2 className="font-serif text-3xl md:text-4xl text-[#111928] mb-4 font-bold">Complete our inquiry form:</h2>
+                <p className="text-[#4b5563] font-sans text-sm leading-relaxed">
+                  Please take a few moments to answer some important questions about your needs, so that we can best serve you. Upon completion of this form, a team member will be in contact with you.
+                </p>
               </header>
-              <form className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-10">
+              <form className="grid grid-cols-1 gap-y-6 form-sans">
+                
                 <div className="flex flex-col space-y-2">
-                  <label className="text-xs uppercase tracking-widest font-bold text-[#404941] font-sans">Full Name</label>
-                  <input className="bg-[#e9e8e7] border-b-2 border-[#004524] border-t-0 border-x-0 focus:ring-0 focus:border-[#C9981A] transition-colors p-4 font-sans outline-none" placeholder="John Doe" type="text" />
+                  <label className="text-sm font-semibold text-[#1b1c1c]">First name<span className="text-red-500">*</span></label>
+                  <input type="text" className="bg-[#f8fafc] border border-gray-200 focus:border-[#C9981A] focus:ring-1 focus:ring-[#C9981A] outline-none rounded-md p-3 w-full transition-all" />
                 </div>
+                
                 <div className="flex flex-col space-y-2">
-                  <label className="text-xs uppercase tracking-widest font-bold text-[#404941] font-sans">Company Name</label>
-                  <input className="bg-[#e9e8e7] border-b-2 border-[#004524] border-t-0 border-x-0 focus:ring-0 focus:border-[#C9981A] transition-colors p-4 font-sans outline-none" placeholder="Acme Corp" type="text" />
+                  <label className="text-sm font-semibold text-[#1b1c1c]">Last name<span className="text-red-500">*</span></label>
+                  <input type="text" className="bg-[#f8fafc] border border-gray-200 focus:border-[#C9981A] focus:ring-1 focus:ring-[#C9981A] outline-none rounded-md p-3 w-full transition-all" />
                 </div>
+                
                 <div className="flex flex-col space-y-2">
-                  <label className="text-xs uppercase tracking-widest font-bold text-[#404941] font-sans">Email</label>
-                  <input className="bg-[#e9e8e7] border-b-2 border-[#004524] border-t-0 border-x-0 focus:ring-0 focus:border-[#C9981A] transition-colors p-4 font-sans outline-none" placeholder="john@company.com" type="email" />
+                  <label className="text-sm font-semibold text-[#1b1c1c]">Have you worked with us before?<span className="text-red-500">*</span></label>
+                  <div className="flex flex-col space-y-2 mt-1">
+                    <label className="flex items-center space-x-3 cursor-pointer"><input type="radio" name="worked_before" value="Yes" className="w-4 h-4 text-[#004524]" /><span>Yes</span></label>
+                    <label className="flex items-center space-x-3 cursor-pointer"><input type="radio" name="worked_before" value="No" className="w-4 h-4 text-[#004524]" /><span>No</span></label>
+                  </div>
                 </div>
+                
                 <div className="flex flex-col space-y-2">
-                  <label className="text-xs uppercase tracking-widest font-bold text-[#404941] font-sans">Phone</label>
-                  <input className="bg-[#e9e8e7] border-b-2 border-[#004524] border-t-0 border-x-0 focus:ring-0 focus:border-[#C9981A] transition-colors p-4 font-sans outline-none" placeholder="+254 700 000 000" type="tel" />
-                </div>
-                <div className="flex flex-col space-y-2 md:col-span-2">
-                  <label className="text-xs uppercase tracking-widest font-bold text-[#404941] font-sans">Service</label>
-                  <select className="bg-[#e9e8e7] border-b-2 border-[#004524] border-t-0 border-x-0 focus:ring-0 focus:border-[#C9981A] transition-colors p-4 appearance-none font-sans outline-none">
-                    <option>Select a service</option>
-                    <option>Audit & Assurance</option>
-                    <option>Tax Advisory</option>
-                    <option>Business Strategy</option>
-                    <option>Risk Management</option>
+                  <label className="text-sm font-semibold text-[#1b1c1c]">What best describes you or your industry?<span className="text-red-500">*</span></label>
+                  <select className="bg-[#f8fafc] border border-gray-200 focus:border-[#C9981A] outline-none rounded-md p-3 w-full appearance-none transition-all">
+                    <option>Please Select</option>
+                    <option>Agriculture</option>
+                    <option>Technology</option>
+                    <option>Finance</option>
+                    <option>Manufacturing</option>
+                    <option>Retail</option>
+                    <option>Other</option>
                   </select>
                 </div>
-                <div className="flex flex-col space-y-2 md:col-span-2">
-                  <label className="text-xs uppercase tracking-widest font-bold text-[#404941] font-sans">Message</label>
-                  <textarea className="bg-[#e9e8e7] border-b-2 border-[#004524] border-t-0 border-x-0 focus:ring-0 focus:border-[#C9981A] transition-colors p-4 resize-none font-sans outline-none" placeholder="How can we assist your legacy?" rows={4}></textarea>
+                
+                <div className="flex flex-col space-y-2">
+                  <label className="text-sm font-semibold text-[#1b1c1c] leading-tight">If you selected "Other" to the question "What services are you looking for?" please describe the services you are interested in.</label>
+                  <input type="text" className="bg-[#f8fafc] border border-gray-200 focus:border-[#C9981A] outline-none rounded-md p-3 w-full transition-all" />
                 </div>
-                <div className="md:col-span-2 flex flex-col md:flex-row md:items-center justify-between gap-6">
-                  <button className="bg-[#fdc74a] text-[#715300] px-10 py-4 font-bold rounded-xl shadow-lg hover:shadow-xl hover:translate-y-[-2px] transition-all duration-300 font-sans" type="button">
-                    Send Message
+                
+                <div className="flex flex-col space-y-2">
+                  <label className="text-sm font-semibold text-[#1b1c1c]">Who prepares your taxes, and which tax year was last filed?<span className="text-red-500">*</span></label>
+                  <textarea className="bg-[#f8fafc] border border-gray-200 focus:border-[#C9981A] outline-none rounded-md p-3 w-full resize-y transition-all" rows={3}></textarea>
+                </div>
+                
+                <div className="flex flex-col space-y-2">
+                  <label className="text-sm font-semibold text-[#1b1c1c]">How urgent is your timeline? (1- Not urgent at all, 5- Extremely urgent)<span className="text-red-500">*</span></label>
+                  <select className="bg-[#f8fafc] border border-gray-200 focus:border-[#C9981A] outline-none rounded-md p-3 w-full appearance-none transition-all">
+                    <option>Please Select</option>
+                    <option>1 - Not urgent at all</option>
+                    <option>2 - Slightly urgent</option>
+                    <option>3 - Moderately urgent</option>
+                    <option>4 - Very urgent</option>
+                    <option>5 - Extremely urgent</option>
+                  </select>
+                </div>
+                
+                <div className="flex flex-col space-y-2">
+                  <label className="text-sm font-semibold text-[#1b1c1c]">How did you hear about us?<span className="text-red-500">*</span></label>
+                  <div className="flex flex-col space-y-2 mt-1">
+                    <label className="flex items-center space-x-3 cursor-pointer"><input type="checkbox" className="w-4 h-4 text-[#004524] rounded border-gray-300" /><span>Referral</span></label>
+                    <label className="flex items-center space-x-3 cursor-pointer"><input type="checkbox" className="w-4 h-4 text-[#004524] rounded border-gray-300" /><span>Web search</span></label>
+                    <label className="flex items-center space-x-3 cursor-pointer"><input type="checkbox" className="w-4 h-4 text-[#004524] rounded border-gray-300" /><span>Industry Association</span></label>
+                    <label className="flex items-center space-x-3 cursor-pointer"><input type="checkbox" className="w-4 h-4 text-[#004524] rounded border-gray-300" /><span>Other</span></label>
+                  </div>
+                </div>
+                
+                <div className="flex flex-col space-y-2">
+                  <label className="text-sm font-semibold text-[#1b1c1c] leading-tight">If you were referred by a person or industry association, who should we thank?</label>
+                  <input type="text" className="bg-[#f8fafc] border border-gray-200 focus:border-[#C9981A] outline-none rounded-md p-3 w-full transition-all" />
+                </div>
+                
+                <div className="flex flex-col space-y-2">
+                  <label className="text-sm font-semibold text-[#1b1c1c]">Any additional questions or comments?</label>
+                  <textarea className="bg-[#f8fafc] border border-gray-200 focus:border-[#C9981A] outline-none rounded-md p-3 w-full resize-y transition-all" rows={3}></textarea>
+                </div>
+                
+                <div className="flex flex-col space-y-2">
+                  <label className="text-sm font-semibold text-[#1b1c1c]">Phone number<span className="text-red-500">*</span></label>
+                  <input type="tel" className="bg-[#f8fafc] border border-gray-200 focus:border-[#C9981A] outline-none rounded-md p-3 w-full transition-all" />
+                </div>
+                
+                <div className="flex flex-col space-y-2">
+                  <label className="text-sm font-semibold text-[#1b1c1c]">Email<span className="text-red-500">*</span></label>
+                  <input type="email" className="bg-[#f8fafc] border border-gray-200 focus:border-[#C9981A] outline-none rounded-md p-3 w-full transition-all" />
+                </div>
+                
+                <div className="border border-gray-200 w-64 h-20 bg-gray-50 flex items-center px-4 space-x-4 mt-2 rounded shadow-sm">
+                  <input type="checkbox" className="w-7 h-7 border-gray-300 rounded focus:ring-[#004524]" />
+                  <span className="text-sm text-gray-700 font-medium">I'm not a robot</span>
+                  <div className="ml-auto flex flex-col items-center">
+                    <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png" alt="reCAPTCHA" className="w-8 h-8 opacity-70" />
+                    <span className="text-[10px] text-gray-400 mt-1">reCAPTCHA</span>
+                  </div>
+                </div>
+
+                <div className="mt-4">
+                  <button className="bg-[#5C944A] text-white px-10 py-3 font-semibold rounded-md shadow hover:bg-[#4d7e3e] hover:-translate-y-0.5 transition-all duration-300 font-sans" type="button">
+                    Submit
                   </button>
-                  <p className="text-xs text-[#404941] max-w-xs italic leading-relaxed font-sans">
-                    We'll respond within 24 hours. Your information is kept confidential.
-                  </p>
                 </div>
               </form>
             </motion.div>
@@ -124,54 +186,52 @@ export default function Contact() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="relative"
+              className="lg:sticky lg:top-24 h-max"
             >
-              {/* Background Decorative Element */}
-              <div className="absolute -inset-10 bg-[#f5f3f3] rounded-full opacity-50 blur-3xl pointer-events-none"></div>
-              <div className="relative bg-[#fbf9f9] p-12 rounded-xl shadow-sm border border-[#c0c9bf]/15 flex flex-col items-center text-center md:items-start md:text-left h-full">
+              <div className="relative bg-[#fbf9f9] p-8 md:p-12 rounded-2xl shadow-sm border border-[#c0c9bf]/30 flex flex-col items-center text-center md:items-start md:text-left">
                 <div className="mb-8 p-4 bg-[#004524] rounded-full inline-flex items-center justify-center">
                   <ShieldCheck className="text-[#ffdfa0] w-10 h-10" />
                 </div>
-                <h2 className="font-serif text-4xl text-[#004524] mb-12 font-bold">Get in Touch Directly</h2>
-                <div className="space-y-10 w-full">
-                  <div className="flex items-start gap-6 group">
-                    <div className="w-12 h-12 rounded-lg bg-[#e9e8e7] flex items-center justify-center group-hover:bg-[#aef2c0] transition-colors">
+                <h2 className="font-serif text-3xl md:text-4xl text-[#004524] mb-10 font-bold">Get in Touch Directly</h2>
+                <div className="space-y-8 w-full">
+                  <div className="flex flex-col md:flex-row items-center md:items-start md:gap-6 group">
+                    <div className="w-12 h-12 rounded-lg bg-[#e9e8e7] flex items-center justify-center group-hover:bg-[#aef2c0] transition-colors mb-3 md:mb-0 shrink-0">
                       <MapPin className="text-[#004524] w-6 h-6" />
                     </div>
                     <div>
                       <p className="text-xs uppercase tracking-widest font-bold text-[#404941] mb-1 font-sans">Office</p>
-                      <p className="text-lg font-medium font-sans text-[#1b1c1c]">Nairobi, Kenya</p>
+                      <p className="text-base md:text-lg font-medium font-sans text-[#1b1c1c]">SDA Building 2nd flr Riverside Drive</p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-6 group">
-                    <div className="w-12 h-12 rounded-lg bg-[#e9e8e7] flex items-center justify-center group-hover:bg-[#aef2c0] transition-colors">
+                  <div className="flex flex-col md:flex-row items-center md:items-start md:gap-6 group">
+                    <div className="w-12 h-12 rounded-lg bg-[#e9e8e7] flex items-center justify-center group-hover:bg-[#aef2c0] transition-colors mb-3 md:mb-0 shrink-0">
                       <Mail className="text-[#004524] w-6 h-6" />
                     </div>
                     <div>
                       <p className="text-xs uppercase tracking-widest font-bold text-[#404941] mb-1 font-sans">Email</p>
-                      <p className="text-lg font-medium font-sans text-[#1b1c1c]">info@cleophasassociates.co.ke</p>
+                      <p className="text-base md:text-lg font-medium font-sans text-[#1b1c1c]">info@cleophasandassociates.com</p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-6 group">
-                    <div className="w-12 h-12 rounded-lg bg-[#e9e8e7] flex items-center justify-center group-hover:bg-[#aef2c0] transition-colors">
+                  <div className="flex flex-col md:flex-row items-center md:items-start md:gap-6 group">
+                    <div className="w-12 h-12 rounded-lg bg-[#e9e8e7] flex items-center justify-center group-hover:bg-[#aef2c0] transition-colors mb-3 md:mb-0 shrink-0">
                       <Phone className="text-[#004524] w-6 h-6" />
                     </div>
                     <div>
                       <p className="text-xs uppercase tracking-widest font-bold text-[#404941] mb-1 font-sans">Phone</p>
-                      <p className="text-lg font-medium font-sans text-[#1b1c1c]">+254 700 000 000</p>
+                      <p className="text-base md:text-lg font-medium font-sans text-[#1b1c1c]">0714023691</p>
                     </div>
                   </div>
-                  <div className="flex items-start gap-6 group">
-                    <div className="w-12 h-12 rounded-lg bg-[#e9e8e7] flex items-center justify-center group-hover:bg-[#aef2c0] transition-colors">
+                  <div className="flex flex-col md:flex-row items-center md:items-start md:gap-6 group">
+                    <div className="w-12 h-12 rounded-lg bg-[#e9e8e7] flex items-center justify-center group-hover:bg-[#aef2c0] transition-colors mb-3 md:mb-0 shrink-0">
                       <Clock className="text-[#004524] w-6 h-6" />
                     </div>
                     <div>
                       <p className="text-xs uppercase tracking-widest font-bold text-[#404941] mb-1 font-sans">Hours</p>
-                      <p className="text-lg font-medium font-sans text-[#1b1c1c]">Mon–Fri, 8:00 AM - 5:00 PM</p>
+                      <p className="text-base md:text-lg font-medium font-sans text-[#1b1c1c]">Mon–Fri, 8:00 AM - 5:00 PM</p>
                     </div>
                   </div>
                 </div>
-                <div className="mt-16 pt-8 border-t border-[#c0c9bf]/30 w-full flex items-center gap-6 justify-center md:justify-start">
+                <div className="mt-12 pt-8 border-t border-[#c0c9bf]/30 w-full flex items-center gap-6 justify-center md:justify-start">
                   <a className="text-[#004524] hover:text-[#C9981A] transition-colors" href="#">
                     <Globe className="w-8 h-8" />
                   </a>
