@@ -230,31 +230,31 @@ export default function Home() {
             <div className="flex animate-marquee gap-12 w-max">
               {/* First set */}
               <div className="flex gap-12 items-center shrink-0">
-                <div className="flex items-center justify-center p-6 bg-surface-container-lowest rounded-2xl shadow-sm border border-outline-variant/10 h-28 w-56 grayscale hover:grayscale-0 transition-all duration-300">
+                <div className="flex items-center justify-center p-6 h-28 w-56 grayscale hover:grayscale-0 transition-all duration-300">
                   <img src="/regilicia_logo_1775210853133.png" alt="Regilicia Investments Ltd" className="max-h-full max-w-full object-contain pointer-events-none" />
                 </div>
-                <div className="flex items-center justify-center p-6 bg-surface-container-lowest rounded-2xl shadow-sm border border-outline-variant/10 h-28 w-56 grayscale hover:grayscale-0 transition-all duration-300">
+                <div className="flex items-center justify-center p-6 h-28 w-56 grayscale hover:grayscale-0 transition-all duration-300">
                   <img src="/tradewings_logo_1775210867365.png" alt="Tradewings Business Enterprise" className="max-h-full max-w-full object-contain pointer-events-none" />
                 </div>
-                <div className="flex items-center justify-center p-6 bg-surface-container-lowest rounded-2xl shadow-sm border border-outline-variant/10 h-28 w-56 grayscale hover:grayscale-0 transition-all duration-300">
+                <div className="flex items-center justify-center p-6 h-28 w-56 grayscale hover:grayscale-0 transition-all duration-300">
                   <img src="/shastala_logo_1775210882004.png" alt="Shastala Enterprises" className="max-h-full max-w-full object-contain pointer-events-none" />
                 </div>
-                <div className="flex items-center justify-center p-6 bg-surface-container-lowest rounded-2xl shadow-sm border border-outline-variant/10 h-28 w-56 grayscale hover:grayscale-0 transition-all duration-300">
+                <div className="flex items-center justify-center p-6 h-28 w-56 grayscale hover:grayscale-0 transition-all duration-300">
                   <img src="/mountain_top_logo_1775210896518.png" alt="Mountain Top Enterprises" className="max-h-full max-w-full object-contain pointer-events-none" />
                 </div>
               </div>
               {/* Duplicate set for seamless loop */}
               <div className="flex gap-12 items-center shrink-0">
-                <div className="flex items-center justify-center p-6 bg-surface-container-lowest rounded-2xl shadow-sm border border-outline-variant/10 h-28 w-56 grayscale hover:grayscale-0 transition-all duration-300">
+                <div className="flex items-center justify-center p-6 h-28 w-56 grayscale hover:grayscale-0 transition-all duration-300">
                   <img src="/regilicia_logo_1775210853133.png" alt="Regilicia Investments Ltd" className="max-h-full max-w-full object-contain pointer-events-none" />
                 </div>
-                <div className="flex items-center justify-center p-6 bg-surface-container-lowest rounded-2xl shadow-sm border border-outline-variant/10 h-28 w-56 grayscale hover:grayscale-0 transition-all duration-300">
+                <div className="flex items-center justify-center p-6 h-28 w-56 grayscale hover:grayscale-0 transition-all duration-300">
                   <img src="/tradewings_logo_1775210867365.png" alt="Tradewings Business Enterprise" className="max-h-full max-w-full object-contain pointer-events-none" />
                 </div>
-                <div className="flex items-center justify-center p-6 bg-surface-container-lowest rounded-2xl shadow-sm border border-outline-variant/10 h-28 w-56 grayscale hover:grayscale-0 transition-all duration-300">
+                <div className="flex items-center justify-center p-6 h-28 w-56 grayscale hover:grayscale-0 transition-all duration-300">
                   <img src="/shastala_logo_1775210882004.png" alt="Shastala Enterprises" className="max-h-full max-w-full object-contain pointer-events-none" />
                 </div>
-                <div className="flex items-center justify-center p-6 bg-surface-container-lowest rounded-2xl shadow-sm border border-outline-variant/10 h-28 w-56 grayscale hover:grayscale-0 transition-all duration-300">
+                <div className="flex items-center justify-center p-6 h-28 w-56 grayscale hover:grayscale-0 transition-all duration-300">
                   <img src="/mountain_top_logo_1775210896518.png" alt="Mountain Top Enterprises" className="max-h-full max-w-full object-contain pointer-events-none" />
                 </div>
               </div>
