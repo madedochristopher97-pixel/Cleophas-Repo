@@ -11,6 +11,8 @@ import ServiceWealth from './pages/ServiceWealth';
 import Insights from './pages/Insights';
 import Careers from './pages/Careers';
 import Contact from './pages/Contact';
+import ServiceBookkeeping from './pages/ServiceBookkeeping';
+import Team from './pages/Team';
 
 export default function App() {
   return (
@@ -24,8 +26,10 @@ export default function App() {
           <Route path="/services/tax" element={<ServiceTax />} />
           <Route path="/services/corporate-finance" element={<ServiceCorporate />} />
           <Route path="/services/wealth-management" element={<ServiceWealth />} />
+          <Route path="/services/bookkeeping" element={<ServiceBookkeeping />} />
           <Route path="/insights" element={<Insights />} />
           <Route path="/careers" element={<Careers />} />
+          <Route path="/team" element={<Team />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Layout>

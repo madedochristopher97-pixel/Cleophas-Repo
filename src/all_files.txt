@@ -1,0 +1,13 @@
+C:\Users\user\OneDrive\Desktop\Cleophas Associates\repo\src\App.tsx
+C:\Users\user\OneDrive\Desktop\Cleophas Associates\repo\src\main.tsx
+C:\Users\user\OneDrive\Desktop\Cleophas Associates\repo\src\components\Layout.tsx
+C:\Users\user\OneDrive\Desktop\Cleophas Associates\repo\src\pages\About.tsx
+C:\Users\user\OneDrive\Desktop\Cleophas Associates\repo\src\pages\Careers.tsx
+C:\Users\user\OneDrive\Desktop\Cleophas Associates\repo\src\pages\Contact.tsx
+C:\Users\user\OneDrive\Desktop\Cleophas Associates\repo\src\pages\Home.tsx
+C:\Users\user\OneDrive\Desktop\Cleophas Associates\repo\src\pages\Insights.tsx
+C:\Users\user\OneDrive\Desktop\Cleophas Associates\repo\src\pages\ServiceAudit.tsx
+C:\Users\user\OneDrive\Desktop\Cleophas Associates\repo\src\pages\ServiceCorporate.tsx
+C:\Users\user\OneDrive\Desktop\Cleophas Associates\repo\src\pages\Services.tsx
+C:\Users\user\OneDrive\Desktop\Cleophas Associates\repo\src\pages\ServiceTax.tsx
+C:\Users\user\OneDrive\Desktop\Cleophas Associates\repo\src\pages\ServiceWealth.tsx

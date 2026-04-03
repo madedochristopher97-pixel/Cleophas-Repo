@@ -43,7 +43,7 @@ export default function Services() {
       description: 'Meticulous record-keeping and financial reporting to ensure accuracy and compliance in your day-to-day operations.',
       icon: <BookOpen className="w-8 h-8 text-[#C9981A]" />,
       image: 'https://images.pexels.com/photos/6693655/pexels-photo-6693655.jpeg?auto=compress&cs=tinysrgb&w=1000&q=80',
-      link: '/services'
+      link: '/services/bookkeeping'
     }
   ];
 

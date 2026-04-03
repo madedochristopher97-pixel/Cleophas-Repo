@@ -42,8 +42,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               About Us
             </Link>
             <Link
-              to="/careers"
-              className={`font-medium transition-colors border-b-2 pb-1 ${path === '/careers' ? 'text-[#004524] dark:text-[#AEF2C0] font-bold border-[#C9981A]' : 'text-[#1B1C1C]/70 dark:text-[#FBF9F9]/70 hover:text-[#004524] dark:hover:text-[#FBF9F9] border-transparent'}`}
+              to="/team"
+              className={`font-medium transition-colors border-b-2 pb-1 ${path === '/team' ? 'text-[#004524] dark:text-[#AEF2C0] font-bold border-[#C9981A]' : 'text-[#1B1C1C]/70 dark:text-[#FBF9F9]/70 hover:text-[#004524] dark:hover:text-[#FBF9F9] border-transparent'}`}
             >
               Team
             </Link>
@@ -99,9 +99,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 About Us
               </Link>
               <Link
-                to="/careers"
+                to="/team"
                 onClick={() => setIsMobileMenuOpen(false)}
-                className={`font-medium transition-colors py-3 border-b border-[#C0C9BF]/20 ${path === '/careers' ? 'text-[#004524] dark:text-[#AEF2C0] font-bold' : 'text-[#1B1C1C]/80 dark:text-[#FBF9F9]/80 hover:text-[#004524] dark:hover:text-[#FBF9F9]'}`}
+                className={`font-medium transition-colors py-3 border-b border-[#C0C9BF]/20 ${path === '/team' ? 'text-[#004524] dark:text-[#AEF2C0] font-bold' : 'text-[#1B1C1C]/80 dark:text-[#FBF9F9]/80 hover:text-[#004524] dark:hover:text-[#FBF9F9]'}`}
               >
                 Team
               </Link>
@@ -196,7 +196,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <li><Link to="/about" className="hover:text-[#004524] dark:hover:text-[#AEF2C0] transition-colors">About Us</Link></li>
                 <li><Link to="/services" className="hover:text-[#004524] dark:hover:text-[#AEF2C0] transition-colors">Services</Link></li>
                 <li><Link to="/insights" className="hover:text-[#004524] dark:hover:text-[#AEF2C0] transition-colors">Our Work</Link></li>
-                <li><Link to="/careers" className="hover:text-[#004524] dark:hover:text-[#AEF2C0] transition-colors">Team</Link></li>
+                <li><Link to="/team" className="hover:text-[#004524] dark:hover:text-[#AEF2C0] transition-colors">Team</Link></li>
+                <li><Link to="/careers" className="hover:text-[#004524] dark:hover:text-[#AEF2C0] transition-colors">Careers</Link></li>
                 <li><Link to="/contact" className="hover:text-[#004524] dark:hover:text-[#AEF2C0] transition-colors">Contact</Link></li>
               </ul>
             </div>
@@ -221,6 +222,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 <li><Link to="/services/tax" className="hover:text-[#004524] dark:hover:text-[#AEF2C0] transition-colors">Tax Advisory</Link></li>
                 <li><Link to="/services/corporate-finance" className="hover:text-[#004524] dark:hover:text-[#AEF2C0] transition-colors">Corporate Finance</Link></li>
                 <li><Link to="/services/wealth-management" className="hover:text-[#004524] dark:hover:text-[#AEF2C0] transition-colors">Wealth Management</Link></li>
+                <li><Link to="/services/bookkeeping" className="hover:text-[#004524] dark:hover:text-[#AEF2C0] transition-colors">Bookkeeping</Link></li>
               </ul>
             </div>
           </div>
