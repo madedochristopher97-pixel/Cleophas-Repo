@@ -18,7 +18,7 @@ export default function Services() {
       title: 'Tax Advisory',
       description: 'Strategic tax planning tailored to your unique footprint. We navigate complex regulatory landscapes to optimize your tax position and mitigate risk.',
       icon: <Calculator className="w-8 h-8 text-[#C9981A]" />,
-      image: 'https://images.pexels.com/photos/7652017/pexels-photo-7652017.jpeg?auto=compress&cs=tinysrgb&w=1000&q=80',
+      image: '/Tax Advisory.jpg',
       link: '/services/tax'
     },
     {
@@ -34,7 +34,7 @@ export default function Services() {
       title: 'Wealth Management',
       description: 'Preserving and growing your legacy across generations. We offer bespoke wealth strategies for high-net-worth individuals and families.',
       icon: <Landmark className="w-8 h-8 text-[#C9981A]" />,
-      image: 'https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=1000&q=80',
+      image: '/Wealth Management.jpg',
       link: '/services/wealth-management'
     },
     {

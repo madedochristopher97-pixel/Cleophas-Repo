@@ -154,7 +154,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             </div>
             <div className="md:w-2/5 lg:w-1/2 relative min-h-[300px]">
               <img
-                src="https://images.pexels.com/photos/5439137/pexels-photo-5439137.jpeg?auto=compress&cs=tinysrgb&w=800&q=80"
+                src="/Newsletter.jpg"
                 alt="Newsletter Subscription"
                 className="absolute inset-0 w-full h-full object-cover"
                 referrerPolicy="no-referrer"

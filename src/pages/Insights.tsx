@@ -232,7 +232,7 @@ export default function Insights() {
                 <p className="text-[#1b1c1c] italic mb-8 relative z-10 text-lg leading-relaxed">"Cleophas & Associates transformed our financial reporting. Their attention to detail during the KRA audit saved us millions in potential penalties."</p>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full bg-[#1b5e38]/20 overflow-hidden">
-                    <img alt="Client 1" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABAKgJlLHdCErS5K7tOw5yPvx6yFl_K3PGqpev3dAt9RmhjsXykwtWoBAHKvd7ehinNF87AzgK0T16_NRXjbEnuQyiN7UwIXYPyC6TkztCS1C79v7FFZv8D7T4yAslhCqJcSCt5iNZG_LMjCoWUXIvdrskmQF4hOydX2x6W6kDQh37G3Uw_7TGhQ21PdE0DgXipdQ-PUaRFZ18ifx3QJ74PfgGcUGwdEh0uYc5k-NpXeIVU9iT9hqE-YZYIR03oK02pjHJcrQWFKBi" referrerPolicy="no-referrer" className="w-full h-full object-cover" />
+                    <img alt="Client 1" src="https://images.pexels.com/photos/3785104/pexels-photo-3785104.jpeg?auto=compress&cs=tinysrgb&w=800" referrerPolicy="no-referrer" className="w-full h-full object-cover" />
                   </div>
                   <div>
                     <div className="font-bold text-[#004524]">James Mwangi</div>
@@ -245,7 +245,7 @@ export default function Insights() {
                 <p className="text-[#1b1c1c] italic mb-8 relative z-10 text-lg leading-relaxed">"A partner in every sense. Their advisory on NGO systems compliance was instrumental in securing our latest round of international funding."</p>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full bg-[#1b5e38]/20 overflow-hidden">
-                    <img alt="Client 2" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhceydj1unLmv9nZhtSLkI4r7wxzl_Zly0GmcuqM5mMjoTm5fHViA9muX0GL6MiJ_VqlUl5dYulMhGNkSMoS9055bBFdxoAcleABFcN2Hi32CE1q9FcE492zj6RLMWrNjvA91ETSTcW6ciKBO6dzAZVJwxWbnCB-BpS9lTVRmb9K0M1fPALWB_riVA27O16QlHJazVNO7VIOE1p9HGeFmZfNuBGtlX0MX4vpP_dnrL1nn5PRiDopxo_OBh_Ph94ArXRKS7G4IoMAjo" referrerPolicy="no-referrer" className="w-full h-full object-cover" />
+                    <img alt="Client 2" src="https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=800" referrerPolicy="no-referrer" className="w-full h-full object-cover" />
                   </div>
                   <div>
                     <div className="font-bold text-[#004524]">Sarah Otieno</div>
