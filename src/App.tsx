@@ -14,6 +14,8 @@ import Contact from './pages/Contact';
 import ServiceBookkeeping from './pages/ServiceBookkeeping';
 import ScrollToTop from './components/ScrollToTop';
 import Team from './pages/Team';
+import Blog from './pages/Blog';
+import BlogPost from './pages/BlogPost';
 
 export default function App() {
   return (
@@ -33,6 +35,8 @@ export default function App() {
           <Route path="/careers" element={<Careers />} />
           <Route path="/team" element={<Team />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
         </Routes>
       </Layout>
     </BrowserRouter>

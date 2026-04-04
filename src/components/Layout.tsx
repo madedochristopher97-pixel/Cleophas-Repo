@@ -47,6 +47,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             >
               Team
             </Link>
+            <Link
+              to="/blog"
+              className={`font-medium transition-colors border-b-2 pb-1 ${path === '/blog' || path.startsWith('/blog/') ? 'text-[#004524] dark:text-[#AEF2C0] font-bold border-[#C9981A]' : 'text-[#1B1C1C]/70 dark:text-[#FBF9F9]/70 hover:text-[#004524] dark:hover:text-[#FBF9F9] border-transparent'}`}
+            >
+              Blog
+            </Link>
           </div>
           <div className="hidden md:flex flex-1 justify-end">
             <Link to="/contact" className="bg-[#C9981A] text-[#261A00] px-6 py-2.5 rounded-lg font-bold hover:shadow-lg hover:brightness-110 transition-all duration-300 inline-block text-center">
@@ -104,6 +110,13 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 className={`font-medium transition-colors py-3 border-b border-[#C0C9BF]/20 ${path === '/team' ? 'text-[#004524] dark:text-[#AEF2C0] font-bold' : 'text-[#1B1C1C]/80 dark:text-[#FBF9F9]/80 hover:text-[#004524] dark:hover:text-[#FBF9F9]'}`}
               >
                 Team
+              </Link>
+              <Link
+                to="/blog"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className={`font-medium transition-colors py-3 border-b border-[#C0C9BF]/20 ${path === '/blog' || path.startsWith('/blog/') ? 'text-[#004524] dark:text-[#AEF2C0] font-bold' : 'text-[#1B1C1C]/80 dark:text-[#FBF9F9]/80 hover:text-[#004524] dark:hover:text-[#FBF9F9]'}`}
+              >
+                Blog
               </Link>
               <div className="pt-6 mt-2">
                 <Link
