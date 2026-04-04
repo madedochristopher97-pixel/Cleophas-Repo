@@ -22,34 +22,34 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               />
             </Link>
           </div>
-          <div className="hidden md:flex items-center justify-center space-x-8 flex-1">
+          <div className="hidden md:flex items-center justify-center space-x-6 flex-1">
             <Link
               to="/services"
-              className={`font-medium transition-colors border-b-2 pb-1 ${path === '/services' ? 'text-[#004524] dark:text-[#AEF2C0] font-bold border-[#C9981A]' : 'text-[#1B1C1C]/70 dark:text-[#FBF9F9]/70 hover:text-[#004524] dark:hover:text-[#FBF9F9] border-transparent'}`}
+              className={`font-medium transition-colors border-b-2 pb-1 whitespace-nowrap ${path === '/services' ? 'text-[#004524] dark:text-[#AEF2C0] font-bold border-[#C9981A]' : 'text-[#1B1C1C]/70 dark:text-[#FBF9F9]/70 hover:text-[#004524] dark:hover:text-[#FBF9F9] border-transparent'}`}
             >
               Services
             </Link>
             <Link
               to="/insights"
-              className={`font-medium transition-colors border-b-2 pb-1 ${path === '/insights' ? 'text-[#004524] dark:text-[#AEF2C0] font-bold border-[#C9981A]' : 'text-[#1B1C1C]/70 dark:text-[#FBF9F9]/70 hover:text-[#004524] dark:hover:text-[#FBF9F9] border-transparent'}`}
+              className={`font-medium transition-colors border-b-2 pb-1 whitespace-nowrap ${path === '/insights' ? 'text-[#004524] dark:text-[#AEF2C0] font-bold border-[#C9981A]' : 'text-[#1B1C1C]/70 dark:text-[#FBF9F9]/70 hover:text-[#004524] dark:hover:text-[#FBF9F9] border-transparent'}`}
             >
               Our Work
             </Link>
             <Link
               to="/about"
-              className={`font-medium transition-colors border-b-2 pb-1 ${path === '/about' ? 'text-[#004524] dark:text-[#AEF2C0] font-bold border-[#C9981A]' : 'text-[#1B1C1C]/70 dark:text-[#FBF9F9]/70 hover:text-[#004524] dark:hover:text-[#FBF9F9] border-transparent'}`}
+              className={`font-medium transition-colors border-b-2 pb-1 whitespace-nowrap ${path === '/about' ? 'text-[#004524] dark:text-[#AEF2C0] font-bold border-[#C9981A]' : 'text-[#1B1C1C]/70 dark:text-[#FBF9F9]/70 hover:text-[#004524] dark:hover:text-[#FBF9F9] border-transparent'}`}
             >
               About Us
             </Link>
             <Link
               to="/team"
-              className={`font-medium transition-colors border-b-2 pb-1 ${path === '/team' ? 'text-[#004524] dark:text-[#AEF2C0] font-bold border-[#C9981A]' : 'text-[#1B1C1C]/70 dark:text-[#FBF9F9]/70 hover:text-[#004524] dark:hover:text-[#FBF9F9] border-transparent'}`}
+              className={`font-medium transition-colors border-b-2 pb-1 whitespace-nowrap ${path === '/team' ? 'text-[#004524] dark:text-[#AEF2C0] font-bold border-[#C9981A]' : 'text-[#1B1C1C]/70 dark:text-[#FBF9F9]/70 hover:text-[#004524] dark:hover:text-[#FBF9F9] border-transparent'}`}
             >
               Team
             </Link>
             <Link
               to="/blog"
-              className={`font-medium transition-colors border-b-2 pb-1 ${path === '/blog' || path.startsWith('/blog/') ? 'text-[#004524] dark:text-[#AEF2C0] font-bold border-[#C9981A]' : 'text-[#1B1C1C]/70 dark:text-[#FBF9F9]/70 hover:text-[#004524] dark:hover:text-[#FBF9F9] border-transparent'}`}
+              className={`font-medium transition-colors border-b-2 pb-1 whitespace-nowrap ${path === '/blog' || path.startsWith('/blog/') ? 'text-[#004524] dark:text-[#AEF2C0] font-bold border-[#C9981A]' : 'text-[#1B1C1C]/70 dark:text-[#FBF9F9]/70 hover:text-[#004524] dark:hover:text-[#FBF9F9] border-transparent'}`}
             >
               Blog
             </Link>
