@@ -232,7 +232,7 @@ export default function Insights() {
                 <p className="text-[#1b1c1c] italic mb-8 relative z-10 text-lg leading-relaxed">"Cleophas & Associates transformed our financial reporting. Their attention to detail during the KRA audit saved us millions in potential penalties."</p>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full bg-[#1b5e38]/20 overflow-hidden">
-                    <img alt="Client 1" src="https://images.pexels.com/photos/3785104/pexels-photo-3785104.jpeg?auto=compress&cs=tinysrgb&w=800" referrerPolicy="no-referrer" className="w-full h-full object-cover" />
+                    <img alt="James Mwangi" src="/client-james.webp" className="w-full h-full object-cover" />
                   </div>
                   <div>
                     <div className="font-bold text-[#004524]">James Mwangi</div>
@@ -245,7 +245,7 @@ export default function Insights() {
                 <p className="text-[#1b1c1c] italic mb-8 relative z-10 text-lg leading-relaxed">"A partner in every sense. Their advisory on NGO systems compliance was instrumental in securing our latest round of international funding."</p>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full bg-[#1b5e38]/20 overflow-hidden">
-                    <img alt="Client 2" src="https://images.pexels.com/photos/1181690/pexels-photo-1181690.jpeg?auto=compress&cs=tinysrgb&w=800" referrerPolicy="no-referrer" className="w-full h-full object-cover" />
+                    <img alt="Sarah Otieno" src="/client-sarah.webp" className="w-full h-full object-cover" />
                   </div>
                   <div>
                     <div className="font-bold text-[#004524]">Sarah Otieno</div>

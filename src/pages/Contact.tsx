@@ -21,10 +21,9 @@ export default function Contact() {
       <section className="bg-[#004524] text-white py-24 md:py-32 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 mix-blend-overlay">
           <img 
-            src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1920&q=80" 
-            alt="Office meeting" 
+            src="/Contact-Us-Hero.webp" 
+            alt="Contact us" 
             className="w-full h-full object-cover"
-            referrerPolicy="no-referrer"
           />
         </div>
         <div className="absolute top-0 right-0 opacity-10 pointer-events-none translate-x-1/4 -translate-y-1/4">
