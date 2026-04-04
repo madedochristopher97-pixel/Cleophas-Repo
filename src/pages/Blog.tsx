@@ -30,8 +30,9 @@ export default function Blog() {
             <span>/</span>
             <span className="text-white">Blog</span>
           </nav>
-          <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6 max-w-3xl">
-            Insights & <span className="italic font-serif text-[#C9981A]">Perspectives</span>
+          <h1 className="text-5xl md:text-7xl font-serif font-bold tracking-tight leading-[1.1] mb-6 max-w-3xl">
+            Insights & <br/>
+            <span className="italic font-light text-[#C9981A]">Perspectives</span>
           </h1>
           <p className="text-xl text-[#aef2c0]/90 max-w-2xl font-body leading-relaxed">
             Expert analysis on tax, audit, corporate finance, and wealth management — tailored for the Kenyan business landscape.
