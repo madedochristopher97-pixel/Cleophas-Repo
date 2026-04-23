@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'motion/react';
 import { 
   ChevronRight, 
@@ -15,6 +15,38 @@ import {
 } from 'lucide-react';
 
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: '',
+    company: '',
+    email: '',
+    phone: '',
+    service: '',
+    message: ''
+  });
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+  };
+
+  const handleWhatsAppSubmit = () => {
+    const { name, company, email, phone, service, message } = formData;
+    
+    // Construct the message text
+    const text = `*New Inquiry from Cleophas & Associates Website*\n\n` +
+      `*Name:* ${name || 'N/A'}\n` +
+      `*Company:* ${company || 'N/A'}\n` +
+      `*Email:* ${email || 'N/A'}\n` +
+      `*Phone:* ${phone || 'N/A'}\n` +
+      `*Service Required:* ${service || 'Not specified'}\n\n` +
+      `*Message:*\n${message || 'No additional message.'}`;
+      
+    const encodedText = encodeURIComponent(text);
+    // Using the contact phone number formatted for WhatsApp API: 254714023691
+    const whatsappUrl = `https://wa.me/254714023691?text=${encodedText}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
   return (
     <div className="flex flex-col w-full">
       {/* 1. PAGE HERO */}
@@ -78,41 +110,41 @@ export default function Contact() {
               <form className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-10">
                 <div className="flex flex-col space-y-2">
                   <label className="text-xs uppercase tracking-widest font-bold text-[#404941] font-sans">Full Name</label>
-                  <input className="bg-[#e9e8e7] border-b-2 border-[#004524] border-t-0 border-x-0 focus:ring-0 focus:border-[#C9981A] transition-colors p-4 font-sans outline-none" placeholder="John Doe" type="text" />
+                  <input name="name" value={formData.name} onChange={handleChange} className="bg-[#e9e8e7] border-b-2 border-[#004524] border-t-0 border-x-0 focus:ring-0 focus:border-[#C9981A] transition-colors p-4 font-sans outline-none" placeholder="John Doe" type="text" />
                 </div>
                 <div className="flex flex-col space-y-2">
                   <label className="text-xs uppercase tracking-widest font-bold text-[#404941] font-sans">Company Name</label>
-                  <input className="bg-[#e9e8e7] border-b-2 border-[#004524] border-t-0 border-x-0 focus:ring-0 focus:border-[#C9981A] transition-colors p-4 font-sans outline-none" placeholder="Acme Corp" type="text" />
+                  <input name="company" value={formData.company} onChange={handleChange} className="bg-[#e9e8e7] border-b-2 border-[#004524] border-t-0 border-x-0 focus:ring-0 focus:border-[#C9981A] transition-colors p-4 font-sans outline-none" placeholder="Acme Corp" type="text" />
                 </div>
                 <div className="flex flex-col space-y-2">
                   <label className="text-xs uppercase tracking-widest font-bold text-[#404941] font-sans">Email</label>
-                  <input className="bg-[#e9e8e7] border-b-2 border-[#004524] border-t-0 border-x-0 focus:ring-0 focus:border-[#C9981A] transition-colors p-4 font-sans outline-none" placeholder="john@company.com" type="email" />
+                  <input name="email" value={formData.email} onChange={handleChange} className="bg-[#e9e8e7] border-b-2 border-[#004524] border-t-0 border-x-0 focus:ring-0 focus:border-[#C9981A] transition-colors p-4 font-sans outline-none" placeholder="john@company.com" type="email" />
                 </div>
                 <div className="flex flex-col space-y-2">
                   <label className="text-xs uppercase tracking-widest font-bold text-[#404941] font-sans">Phone</label>
-                  <input className="bg-[#e9e8e7] border-b-2 border-[#004524] border-t-0 border-x-0 focus:ring-0 focus:border-[#C9981A] transition-colors p-4 font-sans outline-none" placeholder="+254 700 000 000" type="tel" />
+                  <input name="phone" value={formData.phone} onChange={handleChange} className="bg-[#e9e8e7] border-b-2 border-[#004524] border-t-0 border-x-0 focus:ring-0 focus:border-[#C9981A] transition-colors p-4 font-sans outline-none" placeholder="+254 700 000 000" type="tel" />
                 </div>
                 <div className="flex flex-col space-y-2 md:col-span-2">
                   <label className="text-xs uppercase tracking-widest font-bold text-[#404941] font-sans">Service</label>
-                  <select className="bg-[#e9e8e7] border-b-2 border-[#004524] border-t-0 border-x-0 focus:ring-0 focus:border-[#C9981A] transition-colors p-4 appearance-none font-sans outline-none">
-                    <option>Select a service</option>
-                    <option>Audit & Assurance</option>
-                    <option>Tax Advisory</option>
-                    <option>Business Strategy</option>
-                    <option>Risk Management</option>
-                    <option>Bookkeeping services</option>
+                  <select name="service" value={formData.service} onChange={handleChange} className="bg-[#e9e8e7] border-b-2 border-[#004524] border-t-0 border-x-0 focus:ring-0 focus:border-[#C9981A] transition-colors p-4 appearance-none font-sans outline-none">
+                    <option value="">Select a service</option>
+                    <option value="Audit & Assurance">Audit & Assurance</option>
+                    <option value="Tax Advisory">Tax Advisory</option>
+                    <option value="Business Strategy">Business Strategy</option>
+                    <option value="Risk Management">Risk Management</option>
+                    <option value="Bookkeeping services">Bookkeeping services</option>
                   </select>
                 </div>
                 <div className="flex flex-col space-y-2 md:col-span-2">
                   <label className="text-xs uppercase tracking-widest font-bold text-[#404941] font-sans">Message</label>
-                  <textarea className="bg-[#e9e8e7] border-b-2 border-[#004524] border-t-0 border-x-0 focus:ring-0 focus:border-[#C9981A] transition-colors p-4 resize-none font-sans outline-none" placeholder="How can we assist your legacy?" rows={4}></textarea>
+                  <textarea name="message" value={formData.message} onChange={handleChange} className="bg-[#e9e8e7] border-b-2 border-[#004524] border-t-0 border-x-0 focus:ring-0 focus:border-[#C9981A] transition-colors p-4 resize-none font-sans outline-none" placeholder="How can we assist your legacy?" rows={4}></textarea>
                 </div>
                 <div className="md:col-span-2 flex flex-col md:flex-row md:items-center justify-between gap-6">
-                  <button className="bg-[#fdc74a] text-[#715300] px-10 py-4 font-bold rounded-xl shadow-lg hover:shadow-xl hover:translate-y-[-2px] transition-all duration-300 font-sans" type="button">
+                  <button onClick={handleWhatsAppSubmit} className="bg-[#fdc74a] text-[#715300] px-10 py-4 font-bold rounded-xl shadow-lg hover:shadow-xl hover:translate-y-[-2px] transition-all duration-300 font-sans" type="button">
                     Send Message
                   </button>
                   <p className="text-xs text-[#404941] max-w-xs italic leading-relaxed font-sans">
-                    We'll respond within 24 hours. Your information is kept confidential.
+                    We'll redirect you to WhatsApp to send this message directly to our team.
                   </p>
                 </div>
               </form>
